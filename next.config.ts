@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
+  images: { unoptimized: true },
   /*
    * The registered Kage component imports five sibling-scene documents with a
    * `?raw` specifier, which resolves to a file's contents as a string. That
